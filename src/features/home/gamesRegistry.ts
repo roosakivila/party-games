@@ -1,3 +1,5 @@
+import { Flame, Martini, MessageCircleHeart, type LucideIcon } from 'lucide-react'
+
 export type GameId = 'alias' | 'never-have-i-ever' | 'truth-or-drink'
 
 export interface GameMeta {
@@ -6,9 +8,9 @@ export interface GameMeta {
   description: string
   route: string
   available: boolean
-  /** Emoji shown on the game card. */
-  emoji: string
-  /** Tailwind gradient classes used as the card accent. */
+  /** Lucide icon shown on the game card. */
+  icon: LucideIcon
+  /** Tailwind text-color class applied to the icon. */
   accent: string
 }
 
@@ -19,8 +21,8 @@ export const games: GameMeta[] = [
     description: 'Describe the word to your team before the 60s timer runs out.',
     route: '/alias',
     available: true,
-    emoji: '🗣️',
-    accent: 'from-violet-500 to-fuchsia-500',
+    icon: MessageCircleHeart,
+    accent: 'text-fuchsia-500',
   },
   {
     id: 'never-have-i-ever',
@@ -28,8 +30,8 @@ export const games: GameMeta[] = [
     description: 'Tap through prompts and find out who has done what.',
     route: '/never-have-i-ever',
     available: true,
-    emoji: '🙈',
-    accent: 'from-sky-500 to-cyan-500',
+    icon: Flame,
+    accent: 'text-orange-500',
   },
   {
     id: 'truth-or-drink',
@@ -37,7 +39,7 @@ export const games: GameMeta[] = [
     description: 'Answer honestly or take a sip. Your call.',
     route: '/truth-or-drink',
     available: true,
-    emoji: '🥂',
-    accent: 'from-amber-500 to-rose-500',
+    icon: Martini,
+    accent: 'text-rose-500',
   },
 ]

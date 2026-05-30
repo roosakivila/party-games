@@ -34,10 +34,10 @@ export function GameCard({ game }: GameCardProps) {
       )}
     >
       <div
-        className="flex h-14 w-14 shrink-0 items-center justify-center text-4xl"
+        className="flex h-14 w-14 shrink-0 items-center justify-center"
         aria-hidden
       >
-        {game.emoji}
+        <game.icon className={cn('!size-9', game.accent)} strokeWidth={1.75} />
       </div>
 
       <div className="min-w-0 flex-1">
