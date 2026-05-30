@@ -34,10 +34,7 @@ export function GameCard({ game }: GameCardProps) {
       )}
     >
       <div
-        className={cn(
-          'flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br text-3xl shadow-inner',
-          game.accent
-        )}
+        className="flex h-14 w-14 shrink-0 items-center justify-center text-4xl"
         aria-hidden
       >
         {game.emoji}
