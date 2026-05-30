@@ -43,7 +43,7 @@ export function PlayerSetup() {
       <header className="mb-6 mt-2">
         <h1 className="text-3xl font-bold tracking-tight">Alias</h1>
         <p className="mt-1 text-muted-foreground">
-          Add players and pick the word language.
+          Add players and pick the language.
         </p>
       </header>
 
